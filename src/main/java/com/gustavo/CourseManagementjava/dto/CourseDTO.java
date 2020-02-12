@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -18,4 +19,5 @@ public class CourseDTO implements IDTO{
     String description;
     LocalDateTime creationDate;
     LocalDateTime lastUpdateDate;
+    List<ProfessorDTO> professors;
 }

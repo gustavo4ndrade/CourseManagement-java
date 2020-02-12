@@ -17,10 +17,14 @@ public class Course {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+
 	private String name;
+
 	private String description;
-	@Column(name = "creation_date", nullable = true)
+
+	@Column(name = "creation_date")
 	private LocalDateTime creationDate;
-	@Column(name = "last_update_date", nullable = true)
+
+	@Column(name = "last_update_date")
 	private LocalDateTime lastUpdateDate;
 }
